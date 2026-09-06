@@ -1,0 +1,12 @@
+video, iframe {
+    filter: brightness(1.2) contrast(1.5) saturate(1.8) !important;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.3), inset 0 0 100px rgba(255, 0, 255, 0.2);
+    pointer-events: none;
+    z-index: 9998;
+}

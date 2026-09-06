@@ -1,0 +1,13 @@
+video, iframe {
+    filter: hue-rotate(200deg) saturate(1.5) brightness(0.7) !important;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 20, 80, 0.2);
+    pointer-events: none;
+    z-index: 9998;
+    mix-blend-mode: multiply;
+}

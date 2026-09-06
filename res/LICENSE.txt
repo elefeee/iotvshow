@@ -1,0 +1,35 @@
+IOTV Show 电视墙
+Copyright (c) 2026 iovalve.com
+
+本软件基于 DreamScene2 修改发布。
+DreamScene2 原项目：https://github.com/he55/DreamScene2
+
+---- BEGIN MIT LICENSE ----
+Copyright (c) 2021 he55
+MIT License
+Copyright (c) 2021 he55
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---- END MIT LICENSE ----
+
+###################################################
+
+命令行调用说明
+1. 启动并定位窗口： IOTV.exe x y w h
+   参数说明： x = 窗口左边距（像素）  y = 窗口上边距（像素）  w = 窗口宽度（像素）  h = 窗口高度（像素）
+   示例（默认布局）： IOTV.exe 305 0 1615 1039
+   说明：w/h 设为 -1 时程序自动按屏幕尺寸计算。可通过 VBS 脚本调用，用 WMI 取当前屏幕分辨率后传入。
+
+2. 退出程序（发送关闭信号）：IOTV.exe --quit
+   说明：通过 WM_COPYDATA 向已运行的单实例发送退出指令，触发正常退出流程（暂停播放、还原壁纸、清理资源）。
+   也可通过 VBS 静默调用：  IOTVexe --quit
+
+说明：参数和行为可能随版本调整，具体以程序实际支持为准。命令行调用仅调用本机已安装的 Windows 媒体/网页相关能力或程序内嵌组件，不用于破解、下载、录制、转码或绕过任何平台访问限制。
+
+###################################################
+
+直播源与第三方网页免责声明：本软件默认仅提供对公开网页/官方公开直播页面的本地展示能力，不内置、不提供、不解析、不转储、不录制、不下载受版权保护内容，不注入广告，不提供付费/会员绕过功能，不替换任何平台播放源。如包含央视相关官方公开页面，仅以用户本机浏览器/内嵌网页方式访问其公开网页地址（如 cctv.com / cntv.cn 等官方公开页面），不保证信号、画质、可用性与版权授权范围，相关权利归属原平台/版权方。第三方频道地址、卫视页面、芒果 TV 或其他平台地址不由本软件默认提供；如用户自行添加自定义 URL，由用户自行确认所在地区、网络环境及平台条款的合规性。本软件不对用户自行添加的地址内容、可用性、版权状态或访问结果负责。本软件按“现状”提供，不保证适用于任何特定用途。

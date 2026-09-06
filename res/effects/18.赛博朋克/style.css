@@ -1,0 +1,3 @@
+video, iframe {
+    filter: saturate(2) hue-rotate(-30deg) contrast(1.3) brightness(0.8) !important;
+}

@@ -1,0 +1,12 @@
+video, iframe {
+    filter: sepia(0.6) contrast(1.2) brightness(0.8) saturate(1.1) !important;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(80, 40, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 9998;
+}

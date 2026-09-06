@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+  <OutputType>WinExe</OutputType>
+  <TargetFramework>net472</TargetFramework>
+  <UseWindowsForms>true</UseWindowsForms>
+  <UseWPF>True</UseWPF>
+  <AssemblyName>IOTV</AssemblyName>
+  <TargetName>IOTV</TargetName>
+  <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+  <Product>IOTV Show 电视墙</Product>
+  <AssemblyTitle>IOTV Show 电视墙</AssemblyTitle>
+  <Company>英都阀门</Company>
+  <Copyright>Copyright © 2026 iovalve.com / 英都阀门</Copyright>
+  <FileVersion>1.0.0.0</FileVersion>
+  <InformationalVersion>1.0.0</InformationalVersion>
+  <Platforms>x86;x64</Platforms>
+  <RuntimeIdentifiers>win-x64;win7-x86;win7-x64</RuntimeIdentifiers>
+  <ApplicationManifest>app.manifest</ApplicationManifest>
+</PropertyGroup>
+
+<ItemGroup>
+  <EmbeddedResource Include="Assets\icon.ico" />
+</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3405.78" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="script.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

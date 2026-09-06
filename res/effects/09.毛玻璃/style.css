@@ -1,0 +1,3 @@
+video, iframe {
+    filter: blur(2px) brightness(0.9) !important;
+}

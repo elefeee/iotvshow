@@ -1,0 +1,3 @@
+video, iframe {
+    filter: brightness(1.4) contrast(0.8) saturate(0.5) !important;
+}

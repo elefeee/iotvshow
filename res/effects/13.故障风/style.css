@@ -1,0 +1,12 @@
+video, iframe {
+    animation: glitch 0.3s infinite !important;
+}
+
+@keyframes glitch {
+    0% { filter: hue-rotate(0deg) saturate(2) contrast(1.2); transform: translateX(0); }
+    20% { filter: hue-rotate(90deg) saturate(2) contrast(1.2); transform: translateX(-2px); }
+    40% { filter: hue-rotate(180deg) saturate(2) contrast(1.2); transform: translateX(2px); }
+    60% { filter: hue-rotate(270deg) saturate(2) contrast(1.2); transform: translateX(-1px); }
+    80% { filter: hue-rotate(45deg) saturate(2) contrast(1.2); transform: translateX(1px); }
+    100% { filter: hue-rotate(0deg) saturate(2) contrast(1.2); transform: translateX(0); }
+}

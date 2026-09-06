@@ -1,0 +1,4 @@
+video, iframe {
+    transform: rotate(0deg) scale(0.9) !important;
+    border-radius: 50% !important;
+}
