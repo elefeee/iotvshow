@@ -25,3 +25,9 @@
 <img width="960" height="540" alt="2026-09-06_220022_226" src="https://github.com/user-attachments/assets/424b7b37-e60f-4a2c-97ba-55794915da86" />
 
 
+##更新（2026-xx-xx）：
+
+修复浙江卫视嵌入大屏模式视频不全屏的问题。Release 包里的 res/ok.js 仍为旧版，需要手动替换：
+
+打开仓库 → res/ok.js → 点 Raw → 右键另存为
+替换你本地运行包里的 res/ok.js（同名覆盖）
